@@ -1,6 +1,7 @@
 // Fractal Wizard - app.js (bilingual, no persistence)
 /* Data ------------------------------------------------------------------- */
-const IMAGE_BASE = "./images/"; // Change to "./" if your images are in the project root
+//const IMAGE_BASE = "./images/"; // Change to "./" if your images are in the project root
+const IMAGE_BASE = "./"; 
 const STEP_IMAGE_MAP = {
   1: ["image9.png", "image13.png", "image2.png"],
   2: ["image1.png"],
