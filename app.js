@@ -3,15 +3,15 @@
 //const IMAGE_BASE = "./images/"; // Change to "./" if your images are in the project root
 const IMAGE_BASE = "./"; 
 const STEP_IMAGE_MAP = {
-  1: ["image9.png", "image13.png", "image2.png"],
-  2: ["image1.png"],
-  3: ["image4.png", "image5.png"],
-  4: ["image10.png"],
-  5: ["image11.png"],
-  6: ["image7.png", "image3.png"],
-  7: ["image8.png"],
-  8: ["image12.png"],
-  9: ["image6.png"]
+  1: ["paso 1.png"],
+  2: ["paso 2.png"],
+  3: ["paso 3.png", "paso 3 b.png"],
+  4: ["paso 4.png"],
+  5: ["paso 5.png"],
+  6: ["paso 6.png", "paso 6b.png"],
+  7: ["paso 7.png"],
+  8: ["paso 8.png"],
+  9: ["paso 9.png"]
 };
 
 // Spanish steps (from your doc)
