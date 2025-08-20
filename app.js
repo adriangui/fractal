@@ -38,26 +38,26 @@ const STEP_IMAGE_MAP_BEAR = Object.fromEntries(
 // se autocompleta con un caption por defecto.
 const CAPTIONS = {
   es: {
-    1: "",
-    2: "",
-    3: "Validar que el retroceso no rompa el origen del primer impulso",
-    4: "",
-    5: "",
-    6: "Posible docking, pero todavía no se confirma, ya que...",
-    7: "",
-    8: "",
-    9: ""
+    1: [""],
+    2: [""],
+    3: ["Validar que el retroceso no rompa el origen del primer impulso"],
+    4: [""],
+    5: [""],
+    6: ["Posible docking, pero todavía no se confirma, ya que..."],
+    7: [""],
+    8: [""],
+    9: [""]
   },
   en: {
-    1: "Step 1 illustration",
-    2: "Step 2 illustration",
-    3: "Step 3 illustration",
-    4: "Step 4 illustration",
-    5: "Step 5 illustration",
-    6: "Step 6 illustration",
-    7: "Step 7 illustration",
-    8: "Step 8 illustration",
-    9: "Step 9 illustration"
+    1: ["Step 1 illustration"],
+    2: ["Step 2 illustration"],
+    3: ["Step 3 illustration"],
+    4: ["Step 4 illustration"],
+    5: ["Step 5 illustration"],
+    6: ["Step 6 illustration"],
+    7: ["Step 7 illustration"],
+    8: ["Step 8 illustration"],
+    9: ["Step 9 illustration"]
   }
 };
 
