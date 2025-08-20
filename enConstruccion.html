@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist fractal — En construcción</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .under-construction {
+      text-align: center;
+      padding: 50px;
+    }
+    .under-construction h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .under-construction .emoji {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .menu-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .menu-content {
+      display: none;
+      position: absolute;
+      background-color: #1e293b;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+    }
+    .menu-content a {
+      color: #e2e8f0;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+    .menu-content a:hover {
+      background-color: #334155;
+    }
+    .menu-dropdown:hover .menu-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <h1 id="appTitle">Checklist fractal</h1>
+    <div style="margin-top:8px;">
+      <div class="menu-dropdown">
+        <button id="menuBtn">Menú</button>
+        <div id="menuContent" class="menu-content"></div>
+      </div>
+      <select id="langSelect">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div class="card under-construction">
+      <div class="emoji">🚧</div>
+      <h2 id="ucTitle">Esta sección está en construcción</h2>
+      <p id="ucText">Pronto estará disponible. Gracias por tu paciencia.</p>
+      <div style="margin-top:20px;">
+        <a href="index.html" class="btn">Volver al inicio</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <span id="footerNote">© 2025 Checklist fractal</span>
+  </footer>
+
+  <script>
+    const MENU_LINKS = [
+      { title: "Fractales", url: "https://adriangui.github.io/fractal/" },
+      { title: "Fractales versión 2", url: "https://adriangui.github.io/fractal/fractales2.html" },
+      { title: "Rangos operativos", url: "https://adriangui.github.io/fractal/rangos.html" }
+    ];
+
+    const I18N = {
+      es: {
+        title: "Checklist fractal",
+        ucTitle: "Esta sección está en construcción",
+        ucText: "Pronto estará disponible. Gracias por tu paciencia.",
+        footer: "© 2025 Checklist fractal"
+      },
+      en: {
+        title: "Fractal checklist",
+        ucTitle: "This section is under construction",
+        ucText: "It will be available soon. Thank you for your patience.",
+        footer: "© 2025 Fractal checklist"
+      }
+    };
+
+    const state = { lang: "es" };
+
+    function renderMenu() {
+      const menuDiv = document.getElementById("menuContent");
+      menuDiv.innerHTML = MENU_LINKS.map(l => 
+        `<a href="${l.url}" target="_blank">${l.title}</a>`
+      ).join("");
+    }
+
+    function renderTexts() {
+      const i = I18N[state.lang];
+      document.getElementById("appTitle").textContent = i.title;
+      document.getElementById("ucTitle").textContent = i.ucTitle;
+      document.getElementById("ucText").textContent = i.ucText;
+      document.getElementById("footerNote").textContent = i.footer;
+      document.title = i.title + " — " + (state.lang === "es" ? "En construcción" : "Under construction");
+    }
+
+    document.getElementById("langSelect").addEventListener("change", e => {
+      state.lang = e.target.value;
+      renderTexts();
+    });
+
+    // init
+    renderMenu();
+    renderTexts();
+  </script>
+</body>
+</html>
