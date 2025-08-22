@@ -55,7 +55,7 @@ function wireHeader() {
 /* ========= Router por hash ========= */
 const routes = {
   "/fractales": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}fractales.js`),
-  "/rangos": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}rangos.js`),
+  "/rangos": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}en-construccion.js`),
   "/en-construccion": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}en-construccion.js`),
 };
 
