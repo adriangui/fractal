@@ -8,21 +8,23 @@
 </head>
 <body>
   <div class="layout">
-    <!-- Sidebar (left column) -->
+    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-brand">
         <div class="logo-dot" aria-hidden="true"></div>
         <div class="brand-text">Checklist fractal</div>
       </div>
+
       <nav class="side-nav" aria-label="Secciones">
-        <ul id="sideMenu"><!-- Filled by app.js --></ul>
+        <ul id="sideMenu"><!-- Llenado por app.js --></ul>
       </nav>
+
       <div class="sidebar-footer">
         <small>© <span id="yearNow"></span></small>
       </div>
     </aside>
 
-    <!-- Main content (right column) -->
+    <!-- Content -->
     <div class="content">
       <header class="header">
         <div class="titles">
@@ -30,37 +32,18 @@
           <p id="appSubtitle">Checklist interactivo para recorrer tu algoritmo paso a paso.</p>
         </div>
         <div class="toolbar">
-          <select id="langSelect" title="Language / Idioma">
-            <option value="es">Español</option>
-            <option value="en">English</option>
+          <!-- Selector global de tendencia -->
+          <select id="trendSelect" title="Tendencia">
+            <option value="alcista">Alcista</option>
+            <option value="bajista">Bajista</option>
           </select>
-
-          <!-- El selector de tendencia se inyecta si no existe -->
-          <!-- <select id="trendSelect"></select> -->
-
-          <button id="toggleModeBtn" class="btn" title="Cambiar modo / Toggle mode">Modo lista</button>
-          <button id="resetBtn" class="btn" title="Reiniciar / Reset">Reiniciar</button>
+          <button id="resetBtn" class="btn" title="Reiniciar">Reiniciar</button>
         </div>
       </header>
 
       <main class="body">
-        <div class="progress-wrap">
-          <div class="progress"><span id="progressBar"></span></div>
-          <div class="progress-label"><span id="progressText">0%</span></div>
-        </div>
-
-        <section id="stepView" class="card" aria-live="polite"></section>
-
-        <nav class="nav">
-          <div class="hint" id="hintText">
-            Atajos: <span class="kbd">Enter</span> = Listo, <span class="kbd">Backspace</span> = Atrás
-          </div>
-          <div class="nav-btns">
-            <button id="prevBtn" class="btn">Atrás</button>
-            <button id="doneBtn" class="btn ok">Listo</button>
-            <button id="skipBtn" class="btn">Saltar</button>
-          </div>
-        </nav>
+        <!-- Contenedor de vistas -->
+        <div id="app" class="route-host"></div>
       </main>
 
       <footer class="footer">
