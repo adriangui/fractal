@@ -1,6 +1,6 @@
 // fractales.js — Vista Fractales (ES-only)
 import { state } from "./app.js";
-import { renderWizard } from "./_wizard.js";
+import { renderWizard } from "./wizard.js";
 
 // Datos (actualizados según tu última versión)
 import { STEPS_ES_BULL }    from "./steps.es.bull.js";

@@ -1,5 +1,5 @@
 // rangos.js — Ejemplo "Rangos operativos" reutilizando el wizard
-import { renderWizard } from "./_wizard.js";
+import { renderWizard } from "./wizard.js";
 
 // Datos de ejemplo (ajústalos a tu método)
 const RANGOS_STEPS = [
