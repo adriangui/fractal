@@ -2,7 +2,7 @@
 export const STEP_IMAGES_BULL = {
   1: ["paso 1.png", "paso 1 b.png"],
   2: ["paso 2.png"],
-  3: ["paso 3.png", "paso 3 b.png", , "paso 3 c.png"],
+  3: ["paso 3.png", "paso 3 b.png", , "paso 3 C.png"],
   4: ["paso 4.png"],
   5: ["paso 5.png"],
   6: ["paso 6.png", "paso 6 b.png"],
