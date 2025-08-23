@@ -3,7 +3,7 @@ export const CAPTIONS_ES_BULL = {
   1: ["Así se ve de lejos:", " "],
   2: [" "],
   3: ["Validar que el retroceso no rompa el origen del primer impulso", "Así se ve de lejos:", " "],
-  4: [" "],
+  4: ["Este punto todavía no sé realmente cómo es, cuando hay muchas velas"],
   5: ["(DUDA: ¿ES VÁLIDO SI LLEGA JUSTO AL MÁXIMO DEL PRIMER IMPULSO, PERO NO LA PASA?).......... Así se ve de lejos:", " "],
   6: ["Posible docking, pero todavía no se confirma, ya que...", " "],
   7: [" "],
