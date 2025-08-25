@@ -1,13 +1,26 @@
 // steps.es.bull.js (alcista) — según tu versión más reciente + paso 10 de validación
 export const STEPS_ES_BULL = [
-  { text: 'Detectar movimiento de "sube, y baja" de los máximos individuales de 3 velas, y marcar el “primer máximo”.' },
-  { text: 'Detectar si posteriormente hay una vela que rompa al primer máximo de abajo hacia arriba (la misma dirección del movimiento).' },
-  { text: 'Marcar el vórtice en el mínimo de la vela que tenga el mínimo más bajo entre la vela del “primer máximo” y la que rompe ese máximo.' },
-  { text: 'Validar que el máximo de la mecha alta del vórtice sea menor a las velas de los 2 extremos.' },
-  { text: 'Validar que se forma la “N”, donde el segundo impulso supera el máximo del primer impulso.' },
-  { text: 'Encontrar si hay un retroceso posterior que rompa el vórtice.' },
-  { text: 'Para que se confirme tiene que haber un impulso que rompa a ese posible docking.' },
-  { text: 'También hay que validar que el origen de ese impulso no esté por debajo del origen del primer impulso.' },
-  { text: 'Se confirma el rocking porque rompe al docking, y queda conformado el fractal.' },
-  { text: 'Validar que entre el docking y el rocking haya por lo menos 5 velas.' }
+
+ { text: 'Primero veamos como se ve este fractal alcista resuelto' },
+
+  { text: 'Encontrar un posible docking y rocking. Buscar una forma de "V" en donde el segundo movimiento llegue o supere el máximo del primer movimiento, y marcar docking y rocking "potenciales"' },
+  
+  
+  
+  { text: 'Partiendo desde el docking, y yendo para atrás, ir leyendo los movimientos del máximo de cada vela, de esta manera: El primero seguramente "baja". Ir a la siguiente, hasta que "suba". En la imagen de ejemplo hace: "baja", "baja", "baja","baja", "baja", "baja","SUBE" (baja 6 veces, y sube). Cuando sube, en el último que bajó, está el vórtice. Marcar el vórtice en el mínimo de esa vela.' },
+  
+
+  
+  { text: 'Ahora, para detectar el primer máximo, hay que partir de la vela de vórtice, e ir leyendo los máximos que "suben", hasta que "baje". En el ejemplo tenemos que: "Sube, sube, baja". El máximo del último "sube", es el primer máximo.' },
+  
+
+  
+  
+  { text: 'Para ver el origen del movimiento, alargar la línea del primer máximo hacia atras hasta que se choque con una vela. Luego localizar el mínimo más bajo entre el primer máximo y esa vela' },
+  
+    //////////////////////////// 
+  
+  
+ 
+  { text: 'Al trazar los puntos, queda resuelto' }
 ];
