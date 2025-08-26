@@ -15,7 +15,7 @@ export const STEPS_ES_BULL = [
   // { text: 'Ahora, para detectar el primer máximo, hay que partir de la vela de vórtice, e ir leyendo los máximos que "suben", hasta que "baje". En el ejemplo tenemos que: "Sube, sube, baja". El máximo del último "sube", es el primer máximo.' },
   
 
-  { text: 'Marcar el "primer máximo" en el alto de la última vela que subió', 'Y luego marcar una línea entre el primer máximo y la primera vela posterior que lo rompa, y marcar el vórtice en el mínimo de la vela más baja que exista entre estos 2 puntos' },  
+  { text: 'Marcar el "primer máximo" en el alto de la última vela que subió'},  
   
   { text: 'Para ver el origen del movimiento, alargar la línea del primer máximo hacia atras hasta que se choque con una vela. Luego localizar el mínimo más bajo entre el primer máximo y esa vela' },
   
