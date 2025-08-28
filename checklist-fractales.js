@@ -3,12 +3,12 @@ import { state } from "./app.js";
 import { renderWizard } from "./wizard.js";
 
 // Datos (actualizados según tu última versión)
-import { STEPS_ES_BULL }    from "./checklist-fractales.steps.es.bull.js";
-import { STEPS_ES_BEAR }    from "./checklist-fractales.steps.es.bear.js";
-import { STEP_IMAGES_BULL } from "./checklist-fractales.images.bull.js";
-import { STEP_IMAGES_BEAR } from "./checklist-fractales.images.bear.js";
-import { CAPTIONS_ES_BULL } from "./checklist-fractales.captions.es.bull.js";
-import { CAPTIONS_ES_BEAR } from "./checklist-fractales.captions.es.bear.js";
+import { STEPS_ES_BULL }    from "./checklist.fractales.steps.es.bull.js";
+import { STEPS_ES_BEAR }    from "./checklist.fractales.steps.es.bear.js";
+import { STEP_IMAGES_BULL } from "./checklist.fractales.images.bull.js";
+import { STEP_IMAGES_BEAR } from "./checklist.fractales.images.bear.js";
+import { CAPTIONS_ES_BULL } from "./checklist.fractales.captions.es.bull.js";
+import { CAPTIONS_ES_BEAR } from "./checklist.fractales.captions.es.bear.js";
 
 export async function render(host) {
   const getSteps    = () => state.trend === "bajista" ? STEPS_ES_BEAR    : STEPS_ES_BULL;
