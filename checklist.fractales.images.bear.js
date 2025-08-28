@@ -1,5 +1,5 @@
 // images.bull.js — imágenes por paso (bajista)
-export const STEP_IMAGES_BULL = {
+export const STEP_IMAGES_BEAR = {
 	
   1: ["fractal bajista resuelto.png"],
   2: ["checklist bajista 1.png"],
