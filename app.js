@@ -26,8 +26,9 @@ window.PATHS = { BASE_URL, ROUTES_DIR, DATA_DIR };
 
 /* ========= Menú (hash routing interno) ========= */
 const MENU = [
-  { title: "Fractales", hash: "#/fractales" },
-  { title: "Fractales versión 2", hash: "#/en-construccion" },
+  { title: "Algoritmo Fractales", hash: "#/fractales" },
+    { title: "Checklist fractales", hash: "#/checklistfractales" },
+  // { title: "Fractales versión 2", hash: "#/en-construccion" },
   { title: "Rangos operativos", hash: "#/rangos" }
 ];
 
@@ -55,7 +56,7 @@ function wireHeader() {
 /* ========= Router por hash ========= */
 const routes = {
   "/fractales": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}fractales.js`),
-  "/checklistfractales": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}checlist-fractales.js`),  
+  "/checklistfractales": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}checklist-fractales.js`),  
   "/rangos": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}en-construccion.js`),
   "/en-construccion": () => import(/* @vite-ignore */ `${BASE_URL}${ROUTES_DIR}en-construccion.js`),
 };
