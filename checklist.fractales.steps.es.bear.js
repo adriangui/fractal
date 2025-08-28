@@ -1,7 +1,7 @@
 // steps.es.bear.js (bajista) — vector propio equivalente
 export const STEPS_ES_BEAR = [
   { text: 'Primero veamos el fractal' },
-  { text: 'El docking supera el máximo/mínimo del primer impulso' },
+  { text: 'El docking supera el mínimo del primer impulso' },
   { text: 'El rocking supera al vórtice' },
   { text: 'El final del impulso del rocking supera al docking' },
   { text: 'El vórtice y rocking no rompen el origen del primer impulso' },
