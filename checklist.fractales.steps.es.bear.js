@@ -6,6 +6,6 @@ export const STEPS_ES_BEAR = [
   { text: 'El final del impulso del rocking supera al docking' },
   { text: 'El vórtice y rocking no rompen el origen del primer impulso' },
   { text: 'Hay por lo menos 5 velas entre el docking y el rocking' },
-  { text: 'En el vórtice se cumple la condición conocida de mechas. Que creo que es que "Las menchas no rompan al primer máximo"' },
+  { text: 'En el vórtice se cumple la condición conocida de mechas. Que creo que es que "Las menchas no rompan al primer mínimo"' },
   { text: 'Listo' }
 ];
