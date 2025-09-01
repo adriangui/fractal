@@ -1,6 +1,6 @@
 /// steps.es.bull.js
 export const STEPS_ES_BULL = [
-  { text: 'Mira el video de explicación del algoritmo <a href="https://youtu.be/IHsGLuw6XHI" target="_blank">aquí</a>.' }, //1
+  { text: 'Mira el video de explicación del algoritmo <a href="https://youtu.be/IHsGLuw6XHI" target="_blank">https://youtu.be/IHsGLuw6XHI</a>.' }, //1
   { text: 'Buscar una forma de "V" en donde el segundo movimiento llegue o supere el máximo del primer movimiento. Marcar docking y rocking "potenciales", validando que haya al menos 5 velas entre el docking y el rocking' }, //2
   { text: 'Partiendo desde el docking, y yendo para atrás, ir leyendo los movimientos del máximo de cada vela, contando los que bajen, hasta que SUBA, para marcar un pivote temporal' }, //3
    { text: 'En la última vela que bajó, marcar un pivote temporal' }, //4

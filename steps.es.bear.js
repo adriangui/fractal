@@ -1,7 +1,7 @@
 // steps.es.bear.js (bajista)
 export const STEPS_ES_BEAR = [
-  { text: 'Primero veamos como se ve este fractal bajista resuelto' }, //1
-  { text: 'Encontrar un posible docking y rocking. Buscar una forma de "/\\" en donde el segundo movimiento llegue o supere el mínimo del primer movimiento, y marcar docking y rocking "potenciales"' }, //2
+  { text: 'Mira el video de explicación del algoritmo <a href="https://youtu.be/W09Ec4ZNxx4" target="_blank">https://youtu.be/W09Ec4ZNxx4</a>.' }, //1
+  { text: 'Buscar una forma de "/\\" en donde el segundo movimiento llegue o supere el mínimo del primer movimiento. Marcar docking y rocking "potenciales", validando que haya al menos 5 velas entre el docking y el rocking' }, //2
   { text: 'Partiendo desde el docking, y yendo para atrás, ir leyendo los movimientos del mínimo de cada vela, contando los que suben, hasta que BAJE, para marcar un pivote temporal' }, //3
    { text: 'En la última vela que subió, marcar un pivote temporal' }, //4
   { text: 'Desde el pivote, yendo para atrás, contamos las velas que bajen en sus mínimos, hasta que una SUBA, para buscar el primer mínimo' }, //5
