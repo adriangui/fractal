@@ -7,7 +7,7 @@ export const CAPTIONS_ES_BULL = {
   5: ["_"],
   6: ["_"],
   7: ["_"],
-  8: ["_"],
+  8: ["La primera vela, la del primer máximo, no cuenta para buscar el punto más bajo (según vi en el gráfico del video de liquidez y POI en el minuto 34:17)"],
   9: ["_"],
   10: ["_"],
 };

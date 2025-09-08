@@ -7,7 +7,7 @@ export const CAPTIONS_ES_BEAR = {
   5: ["_"],
   6: ["_"],
   7: ["_"],
-  8: ["_"],
+  8: [""La primera vela, la del primer mínimo, no cuenta para buscar el punto más alto  (según vi en el gráfico del video de liquidez y POI en el minuto 34:17)""],
   9: ["_"],
   10: ["_"],
 };
